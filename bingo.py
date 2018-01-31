@@ -171,8 +171,7 @@ def show_answer():
     print_draw_index(pinyin_index)
 
     clips = get_pinyin_clips()
-    draw_index = pinyin_index + 1
-    draw_answer = parse_pinyin_from_filename(clips[draw_index])
+    draw_answer = parse_pinyin_from_filename(clips[pinyin_index])
 
     print_draw_answer(draw_answer)
 
